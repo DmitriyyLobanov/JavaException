@@ -19,7 +19,14 @@ public class User {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "User{" +
+                "surname='" + surname + '\'' +
+                ", name='" + name + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", birthDate='" + birthDate + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", sex='" + sex + '\'' +
+                '}';
     }
 
     public String getName() {
