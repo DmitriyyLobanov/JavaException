@@ -1,14 +1,20 @@
 package Seminar_3;
 
 public class User {
-    private String name;
     private String surname;
+    private String name;
     private String patronymic;
-    private String birthDate;
-    private long phoneNumber;
+    private final String birthDate;
+    private String phoneNumber;
     private String sex;
 
-    public User() {
+    public User(String[] userInfo) {
+        this.surname = userInfo[0];
+        this.name = userInfo[1];
+        this.patronymic = userInfo[2];
+        this.birthDate = userInfo[3];
+        this.phoneNumber = userInfo[4];
+        this.sex = userInfo[5];
     }
 
     @Override
@@ -32,7 +38,7 @@ public class User {
         return birthDate;
     }
 
-    public long getPhoneNumber() {
+    public String getPhoneNumber() {
         return phoneNumber;
     }
 
